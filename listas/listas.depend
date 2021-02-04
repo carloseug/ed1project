@@ -1,0 +1,134 @@
+# depslib dependency file v1.0
+1583374751 source:/home/carlos/Documents/listas/main.cpp
+	"Lista.h"
+	"Menu.cpp"
+	"leitorDeArquivos.cpp"
+	"clientCounter.cpp"
+
+1583762294 /home/carlos/Documents/listas/Lista.h
+	"Node.h"
+	"NodeSeq.h"
+
+1573343256 /home/carlos/Documents/listas/Node.h
+	<new>
+	<iostream>
+	<string.h>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<time.h>
+	<iomanip>
+
+1573353891 source:/home/carlos/Documents/listas/Lista.cpp
+	"Lista.h"
+
+1583763165 source:/home/carlos/Documents/listas/Menu.cpp
+	"Lista.h"
+
+1583763165 /home/carlos/Documents/listas/Menu.cpp
+	"Lista.h"
+
+1583762630 source:/home/carlos/Documents/listas/leitorDeArquivos.cpp
+	"Lista.h"
+
+1583762630 /home/carlos/Documents/listas/leitorDeArquivos.cpp
+	"Lista.h"
+
+1573337126 /home/carlos/Documents/listas/Lista.cpp
+	"Lista.h"
+
+1583373741 source:/home/carlos/Documents/listas/clientCounter.cpp
+	"Lista.h"
+	"Menu.cpp"
+	"leitorDeArquivos.cpp"
+
+1583762237 /home/carlos/Documents/listas/clientCounter.cpp
+	"Lista.h"
+	"Menu.cpp"
+	"leitorDeArquivos.cpp"
+
+1583762834 /home/carlos/Documents/listas/NodeSeq.h
+
+1607696525 source:c:\users\carlo\desktop\listas-20201211t142132z-001\listas\leitordearquivos.cpp
+	"Lista.h"
+
+1607696525 c:\users\carlo\desktop\listas-20201211t142132z-001\listas\lista.h
+	"Node.h"
+	"NodeSeq.h"
+
+1607696525 c:\users\carlo\desktop\listas-20201211t142132z-001\listas\node.h
+	<new>
+	<iostream>
+	<string.h>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<time.h>
+	<iomanip>
+
+1607696525 c:\users\carlo\desktop\listas-20201211t142132z-001\listas\nodeseq.h
+
+1607696525 source:c:\users\carlo\desktop\listas-20201211t142132z-001\listas\lista.cpp
+	"Lista.h"
+
+1607696525 source:c:\users\carlo\desktop\listas-20201211t142132z-001\listas\main.cpp
+	"Lista.h"
+	"Menu.cpp"
+	"leitorDeArquivos.cpp"
+	"clientCounter.cpp"
+
+1607696525 c:\users\carlo\desktop\listas-20201211t142132z-001\listas\menu.cpp
+	"Lista.h"
+
+1607696525 c:\users\carlo\desktop\listas-20201211t142132z-001\listas\leitordearquivos.cpp
+	"Lista.h"
+
+1607696525 c:\users\carlo\desktop\listas-20201211t142132z-001\listas\clientcounter.cpp
+	"Lista.h"
+	"Menu.cpp"
+	"leitorDeArquivos.cpp"
+
+1607696525 source:c:\users\carlo\desktop\listas-20201211t142132z-001\listas\menu.cpp
+	"Lista.h"
+
+1612466821 source:c:\users\carlo\desktop\listas\leitordearquivos.cpp
+	"Lista.h"
+
+1612466784 c:\users\carlo\desktop\listas\lista.h
+	"Node.h"
+
+1607696525 c:\users\carlo\desktop\listas\node.h
+	<new>
+	<iostream>
+	<string.h>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<time.h>
+	<iomanip>
+
+1607696525 c:\users\carlo\desktop\listas\nodeseq.h
+
+1607696525 source:c:\users\carlo\desktop\listas\lista.cpp
+	"Lista.h"
+
+1607696525 source:c:\users\carlo\desktop\listas\main.cpp
+	"Lista.h"
+	"Menu.cpp"
+	"leitorDeArquivos.cpp"
+	"clientCounter.cpp"
+
+1607696525 c:\users\carlo\desktop\listas\menu.cpp
+	"Lista.h"
+
+1607696525 c:\users\carlo\desktop\listas\leitordearquivos.cpp
+	"Lista.h"
+
+1607696525 c:\users\carlo\desktop\listas\clientcounter.cpp
+	"Lista.h"
+	"Menu.cpp"
+	"leitorDeArquivos.cpp"
+
+1612469613 source:c:\users\carlo\desktop\listas\menu.cpp
+	"Lista.h"
+
