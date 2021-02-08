@@ -46,11 +46,11 @@ class Menu{
 
     void showSecondMenu()
     {
-        cout << "0pçoes:" <<
-        endl << "1 - Inserir usuário no fim da lista" <<
-        endl << "2 - Inserir usuário no inicio da lista" <<
-        endl << "3 - Inserir usuário numa posição K da lista" <<
-        endl << "4 - Remover o Primeiro usuário" <<
+        cout << "Opcoes:" <<
+        endl << "1 - Inserir usuario no fim da lista" <<
+        endl << "2 - Inserir usuario no inicio da lista" <<
+        endl << "3 - Inserir usuario numa posicao K da lista" <<
+        endl << "4 - Remover o Primeiro usuario" <<
         endl << "5 - Remover um usuario K" <<
         endl << "6 - Remover o Ultimo usuario" <<
         endl << "7 - Buscar na Lista" <<
@@ -259,163 +259,18 @@ class Menu{
 
     }
 
-   /*void loopingMenuSeq (int userOption, NodeSeq *listaSeq, long unsigned int *listLength, double* c, double* m)
-    {
-        switch (userOption){
-
-            case 1:{
-                string newName = getNewName();
-                int newRg = getNewRg();
-                *listLength = *listLength + 1;
-
-                listaSeq = (NodeSeq*) realloc (listaSeq, (*listLength * sizeof(NodeSeq)));
-                *m = *m + *listLength;
-
-                listaSeq[*listLength - 1].name = newName;
-                listaSeq[*listLength - 1].rg = newRg;
-                listaSeq[*listLength - 1].position = *listLength;
-
-                cout << endl << "Pos: " << listaSeq[*listLength-1].position << " Nome: "<< listaSeq[*listLength-1].name
-                << " Rg: " << listaSeq[*listLength-1].rg << endl;
-
-                break;
-            }
-            case 2:{
-                string newName = getNewName();
-                int newRg = getNewRg();
-
-                listaSeq = (NodeSeq*) realloc (listaSeq, sizeof (NodeSeq) );
-
-                for (int i = *listLength; i >= 0; i --){
-                    listaSeq[i+1] = listaSeq[i];
-                    *m = *m + 1;
-                    }
-
-                listaSeq[0].name = newName;
-                listaSeq[0].rg = newRg;
-                *listLength = *listLength + 1;
-                updatePosition(listaSeq, *listLength);
-
-
-                break;
-            }
-            case 3:{
-                string newName = getNewName();
-                int newRg = getNewRg();
-
-                int posK = getPosition() - 1;
-
-                listaSeq = (NodeSeq*) realloc (listaSeq, sizeof (NodeSeq) * (*listLength + 1));
-
-                for (int i = *listLength; i >= posK; i--){
-                    listaSeq[i+1] = listaSeq[i];
-                    *m = *m + 1;
-                    }
-
-                listaSeq[posK].name = newName;
-                listaSeq[posK].rg = newRg;
-                *listLength = *listLength + 1;
-                updatePosition(listaSeq, *listLength);
-
-                cout <<"Pos: " << listaSeq[posK].position << " Nome: " << listaSeq[posK].name
-                << " Rg: " << listaSeq[posK].rg << endl;
-
-                break;
-            }
-            case 4:{
-                for (int i = 0; i < *listLength - 1; i ++){
-                    listaSeq[i] = listaSeq[i+1];
-                    *m = *m + 1;
-                    }
-
-                listaSeq = (NodeSeq*) realloc (listaSeq, sizeof (NodeSeq) * (*listLength - 1));
-
-                *listLength = *listLength - 1;
-                updatePosition(listaSeq, *listLength);
-
-                break;
-            }
-            case 5:{
-                int posK = getPosition() - 1;
-
-                for (int i = posK; i < *listLength - 1; i ++){
-                    listaSeq[i] = listaSeq[i+1];
-                    * m = * m + 1;
-                    }
-
-                listaSeq = (NodeSeq*) realloc (listaSeq, sizeof (NodeSeq) * (*listLength - 1));
-                *listLength = *listLength - 1;
-                updatePosition(listaSeq, *listLength);
-
-                break;
-            }
-            case 6:{
-                listaSeq = (NodeSeq*) realloc (listaSeq, sizeof (NodeSeq) * (*listLength - 1));
-                *listLength = *listLength - 1;
-                updatePosition(listaSeq, *listLength);
-
-                break;
-            }
-            case 7:{
-                int i = 0, searchRg = getNewRg();
-
-                while (listaSeq[i].rg != searchRg)
-                {
-                    *c = *c + 1;
-                    i++;
-                }
-
-                cout <<"Pos: " << listaSeq[i].position << " Nome: " << listaSeq[i].name << " Rg: " << listaSeq[i].rg << endl;
-
-                break;
-
-            }
-            case 8:{
-               for (int i = 0; i < *listLength; i++){
-                    cout << " Pos: " << listaSeq[i].position << " Nome: " << listaSeq[i].name << " Rg: " <<
-                    listaSeq[i].rg << endl;
-                    *c = *c + 1;
-                    }
-
-                break;
-            }
-            case 9:{
-
-                ofstream savingFile ("NomeRGSave.txt");
-
-                if (savingFile.is_open())
-                {
-                    for (int i = 0; i < *listLength; i++){
-                        savingFile << listaSeq[i].name << "," << listaSeq[i].rg << endl;
-                        *c = *c + 1;
-                        }
-
-                    savingFile.close();
-                }
-                else cout << "Unable to open file";
-
-                break;
-            }
-            case 10:{
-                exit (0);
-            }
-            default:{
-                cout << endl << "-> Opçao invalida" << endl;
-                break;
-            }
-        }
-    }
-
-    void updatePosition(NodeSeq *listaSeq, long int tam)
-    {
-        for(int i = 0; i < tam; i++)
-            listaSeq[i].position = i+1;
-    }
-    */
     void invalidOption()
     {
         cout << "Opcao Invalida";
         exit(EXIT_FAILURE);
+    }
+
+    int getUserOption()
+    {
+        int userOption;
+        cin >> userOption;
+
+        return userOption;
     }
 };
 

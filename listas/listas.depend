@@ -132,3 +132,36 @@
 1612469613 source:c:\users\carlo\desktop\listas\menu.cpp
 	"Lista.h"
 
+1612805019 source:c:\users\carlo\documents\github\ed1project\listas\leitordearquivos.cpp
+	"Lista.h"
+
+1612788595 c:\users\carlo\documents\github\ed1project\listas\lista.h
+	"Node.h"
+
+1612788595 c:\users\carlo\documents\github\ed1project\listas\node.h
+	<new>
+	<iostream>
+	<string.h>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<time.h>
+	<iomanip>
+
+1612788595 source:c:\users\carlo\documents\github\ed1project\listas\lista.cpp
+	"Lista.h"
+
+1612803763 source:c:\users\carlo\documents\github\ed1project\listas\menu.cpp
+	"Lista.h"
+
+1612804712 source:c:\users\carlo\documents\github\ed1project\listas\main.cpp
+	"Lista.h"
+	"Menu.cpp"
+	"leitorDeArquivos.cpp"
+
+1612803763 c:\users\carlo\documents\github\ed1project\listas\menu.cpp
+	"Lista.h"
+
+1612805019 c:\users\carlo\documents\github\ed1project\listas\leitordearquivos.cpp
+	"Lista.h"
+
