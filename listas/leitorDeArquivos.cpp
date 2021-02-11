@@ -23,7 +23,7 @@ public:
         }
 
         else
-            cout << "Unable to open file" << endl;
+            cout << "Falha ao abrir arquivo" << endl;
 
         return counter;
     }

@@ -6,6 +6,7 @@ using namespace std;
 
 class Menu{
     public:
+    clock_t clockStarted, clockFinished;
 
     int chooseListType()
     {
@@ -128,7 +129,7 @@ class Menu{
     double getPosition()
     {
         double position;
-        cout << "Insira a posiçao: ";
+        cout << "Insira a posicao: ";
         cin >> position;
 
         return position;
@@ -140,7 +141,8 @@ class Menu{
         " <- Foi removido da lista" << endl << endl;
     }
 
-    void loopingMenu(int userOption, Lista* myList, double* c, double* m)
+    void loopingMenu(int userOption, Lista* myList, double* c, double* m,
+                     clock_t initial_time, clock_t final_time, double* executionTime)
     {
         switch (userOption){
 
@@ -252,7 +254,7 @@ class Menu{
                 exit (0);
             }
             default:{
-                cout << endl << "-> Opçao invalida" << endl;
+                cout << endl << "-> Opcao invalida" << endl;
                 break;
             }
         }
