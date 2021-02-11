@@ -1,69 +1,57 @@
-#ifndef LEITORDEARQUIVOS_CPP
-#define LEITORDEARQUIVOS_CPP
-#include "Lista.h"
+#include "leitorDeArquivos.h"
 
-using namespace std;
+int Reader::lineCounter(string fileName)
+{
+    int counter = 0;
+    string line;
+    ifstream myFile (fileName);
 
-class Reader{
-public:
-
-    int lineCounter(string fileName)
+    if (myFile.is_open())
     {
-        int counter = 0;
-        string line;
-        ifstream myFile (fileName);
-
-        if (myFile.is_open())
+        while (getline (myFile,line))
         {
-            while (getline (myFile,line))
-            {
-                counter++;
-            }
-            myFile.close();
+            counter++;
         }
-
-        else
-            cout << "Falha ao abrir arquivo" << endl;
-
-        return counter;
+        myFile.close();
     }
 
-    void geradorEncadeada(string fileName, Lista* myList)
+    else
+        cout << "Falha ao abrir arquivo" << endl;
+
+    return counter;
+}
+
+void Reader::geradorEncadeada(string fileName, Lista* myList)
+{
+    string line;
+    string name, rgstr;
+    int aux, tam, rg;
+    ifstream myFile (fileName);
+
+    if (myFile.is_open())
     {
-        string line;
-        string name, rgstr;
-        int aux, tam, rg;
-        ifstream myFile (fileName);
-
-        if (myFile.is_open())
+        while (getline (myFile, line))
         {
-            while (getline (myFile, line))
-            {
-            //cria as strings name e rg
-                aux = line.find(",");
-                name = line.substr(0, aux);
-                rgstr = line.substr(aux+1);
+        //cria as strings name e rg
+            aux = line.find(",");
+            name = line.substr(0, aux);
+            rgstr = line.substr(aux+1);
 
-            //converte a string rg em int
-                tam = rgstr.length();
-                char rgvector[tam + 1];
-                rgstr.copy(rgvector, tam, 0);
-                rgvector[tam] = 0;
-                rg = atoi(rgvector);
+        //converte a string rg em int
+            tam = rgstr.length();
+            char rgvector[tam + 1];
+            rgstr.copy(rgvector, tam, 0);
+            rgvector[tam] = 0;
+            rg = atoi(rgvector);
 
-            //gera os nos
-                myList->insertNode(new Node(name, rg));
+        //gera os nos
+            myList->insertNode(new Node(name, rg));
 
-            }
-
-            myFile.close();
         }
 
-        else
-            cout << "Unable to open file" << endl;
+        myFile.close();
     }
 
-
-};
-
-#endif // LEITORDEARQUIVOS_CPP
+    else
+        cout << "Unable to open file" << endl;
+}

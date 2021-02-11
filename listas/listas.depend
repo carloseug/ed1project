@@ -132,10 +132,10 @@
 1612469613 source:c:\users\carlo\desktop\listas\menu.cpp
 	"Lista.h"
 
-1612967220 source:c:\users\carlo\documents\github\ed1project\listas\leitordearquivos.cpp
-	"Lista.h"
+1613065235 source:c:\users\carlo\documents\github\ed1project\listas\leitordearquivos.cpp
+	"leitorDeArquivos.h"
 
-1612788595 c:\users\carlo\documents\github\ed1project\listas\lista.h
+1613065235 c:\users\carlo\documents\github\ed1project\listas\lista.h
 	"Node.h"
 
 1612788595 c:\users\carlo\documents\github\ed1project\listas\node.h
@@ -148,20 +148,26 @@
 	<time.h>
 	<iomanip>
 
-1612788595 source:c:\users\carlo\documents\github\ed1project\listas\lista.cpp
+1613063988 source:c:\users\carlo\documents\github\ed1project\listas\lista.cpp
 	"Lista.h"
 
-1612975775 source:c:\users\carlo\documents\github\ed1project\listas\menu.cpp
+1613064642 source:c:\users\carlo\documents\github\ed1project\listas\menu.cpp
+	"Menu.h"
+
+1613065248 source:c:\users\carlo\documents\github\ed1project\listas\main.cpp
+	"Lista.h"
+	"Menu.h"
+	"leitorDeArquivos.h"
+
+1613064642 c:\users\carlo\documents\github\ed1project\listas\menu.cpp
+	"Menu.h"
+
+1613065235 c:\users\carlo\documents\github\ed1project\listas\leitordearquivos.cpp
+	"leitorDeArquivos.h"
+
+1613064593 c:\users\carlo\documents\github\ed1project\listas\menu.h
 	"Lista.h"
 
-1612975813 source:c:\users\carlo\documents\github\ed1project\listas\main.cpp
-	"Lista.h"
-	"Menu.cpp"
-	"leitorDeArquivos.cpp"
-
-1612975775 c:\users\carlo\documents\github\ed1project\listas\menu.cpp
-	"Lista.h"
-
-1612967220 c:\users\carlo\documents\github\ed1project\listas\leitordearquivos.cpp
+1613065235 c:\users\carlo\documents\github\ed1project\listas\leitordearquivos.h
 	"Lista.h"
 

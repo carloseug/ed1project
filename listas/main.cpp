@@ -1,6 +1,6 @@
 #include "Lista.h"
-#include "Menu.cpp"
-#include "leitorDeArquivos.cpp"
+#include "Menu.h"
+#include "leitorDeArquivos.h"
 
 int main()
 {
@@ -9,7 +9,8 @@ int main()
     Lista myList;
     clock_t clockStarted, clockFinished;
     int userOption;
-    double comparisons, moves, executionTime;
+    double executionTime;
+    int comparisons = 0, moves = 0;
 
     cout << myReader.lineCounter(myMenu.whichFile(userOption = myMenu.showFirstMenu()))
     << " linhas nesse arquivo" << endl;
@@ -25,7 +26,10 @@ int main()
         myMenu.showSecondMenu();
         myMenu.loopingMenu(userOption = myMenu.getUserOption(), &myList,
                            &comparisons, &moves, clockStarted, clockFinished, &executionTime);
-
+        cout << endl << "Tempo de execucao: " << executionTime << "(seg)" << endl
+        << "Comparacoes: " << comparisons << "  Atribuicoes: " << moves << endl << endl;
+        comparisons = 0;
+        moves = 0;
     }
 
     return 0;
