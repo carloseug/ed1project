@@ -148,16 +148,19 @@
 	<time.h>
 	<iomanip>
 
-1613063988 source:c:\users\carlo\documents\github\ed1project\listas\lista.cpp
+1618923873 source:c:\users\carlo\documents\github\ed1project\listas\lista.cpp
 	"Lista.h"
 
 1613064642 source:c:\users\carlo\documents\github\ed1project\listas\menu.cpp
 	"Menu.h"
 
-1613065248 source:c:\users\carlo\documents\github\ed1project\listas\main.cpp
+1621346577 source:c:\users\carlo\documents\github\ed1project\listas\main.cpp
 	"Lista.h"
 	"Menu.h"
 	"leitorDeArquivos.h"
+	"NodeSeq.h"
+	"MenuSeq.h"
+	"LeitorSeq.h"
 
 1613064642 c:\users\carlo\documents\github\ed1project\listas\menu.cpp
 	"Menu.h"
@@ -170,4 +173,27 @@
 
 1613065235 c:\users\carlo\documents\github\ed1project\listas\leitordearquivos.h
 	"Lista.h"
+
+1621263209 source:c:\users\carlo\documents\github\ed1project\listas\leitorseq.cpp
+	"LeitorSeq.h"
+
+1620916957 c:\users\carlo\documents\github\ed1project\listas\leitorseq.h
+	"NodeSeq.h"
+
+1620915262 c:\users\carlo\documents\github\ed1project\listas\nodeseq.h
+	<new>
+	<iostream>
+	<string.h>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<time.h>
+	<iomanip>
+	<locale.h>
+
+1621259034 source:c:\users\carlo\documents\github\ed1project\listas\menuseq.cpp
+	"MenuSeq.h"
+
+1621346911 c:\users\carlo\documents\github\ed1project\listas\menuseq.h
+	"NodeSeq.h"
 

@@ -1,15 +1,23 @@
 #ifndef NODESEQ_H
 #define NODESEQ_H
 
+#include <new>
+#include <iostream>
+#include <string.h>
+#include <string>
+#include <fstream>
+#include <stdlib.h>
+#include <time.h>
+#include <iomanip>
+#include <locale.h>
+
 using namespace std;
 
-struct NodeSeq{
+class NodeSeq{
 public:
     int rg;
-    long unsigned int position;
-    string name ;
+    string name;
 
 };
 
 #endif // NODESEQ_H
-

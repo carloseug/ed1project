@@ -37,6 +37,7 @@
 		<Unit filename="Menu.h" />
 		<Unit filename="Node.h" />
 		<Unit filename="leitorDeArquivos.cpp" />
+		<Unit filename="leitorDeArquivos.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
