@@ -154,7 +154,7 @@
 1613064642 source:c:\users\carlo\documents\github\ed1project\listas\menu.cpp
 	"Menu.h"
 
-1621346577 source:c:\users\carlo\documents\github\ed1project\listas\main.cpp
+1621350329 source:c:\users\carlo\documents\github\ed1project\listas\main.cpp
 	"Lista.h"
 	"Menu.h"
 	"leitorDeArquivos.h"
@@ -191,7 +191,7 @@
 	<iomanip>
 	<locale.h>
 
-1621259034 source:c:\users\carlo\documents\github\ed1project\listas\menuseq.cpp
+1621346911 source:c:\users\carlo\documents\github\ed1project\listas\menuseq.cpp
 	"MenuSeq.h"
 
 1621346911 c:\users\carlo\documents\github\ed1project\listas\menuseq.h
